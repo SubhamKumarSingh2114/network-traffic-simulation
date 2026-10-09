@@ -57,6 +57,19 @@ Overall, the project demonstrates how **Artificial Intelligence and classical Da
 
 ---
 
+## 🔬 System Workflow & Architecture Breakdown
+
+> **Architecture Thesis**: Unlike standard CRUD services or isolated analytical scripts, this platform bridges **Data Structures & Algorithms (DSA)**, **Machine Learning**, and **Production API Design** into a unified, high-throughput network threat intelligence backend.
+
+| Layer / Domain | Component Built | Technical & Architectural Value |
+| :--- | :--- | :--- |
+| **Applied Machine Learning** | Random Forest threat classifier with real-time confidence scoring | Multi-class classification (DDoS, Port Scan, Brute Force) trained on continuous network flow telemetry metrics (packet count, byte volume, packet rate, duration). |
+| **Data Structures & Algorithms** | Weighted Network Graph (BFS/DFS, Dijkstra), Min/Max Priority Queues | Deterministic shortest-path routing, network blast-radius containment analysis, and $O(\log n)$ threat alert prioritization. |
+| **Backend Architecture** | High-throughput asynchronous FastAPI microservice with OpenAPI/Swagger | Sub-millisecond internal routing, decoupled simulation loops, non-blocking I/O, and clean modular boundary isolation. |
+| **Data Persistence & Audit** | Relational schema in SQLite with indexed query patterns | Full historical traceability of traffic metadata, attack vectors, and prioritized alert audit logs. |
+
+---
+
 ## 🌟 Overview
 
 The **AI Network Threat Intelligence Platform** is a robust backend system designed to simulate, monitor, and analyze network traffic. By combining traditional graph-based network traversal algorithms (BFS, DFS, Dijkstra) with Machine Learning, this platform can dynamically detect anomalies, classify potential threats (e.g., DDoS, Port Scans, Brute Force attacks), and prioritize security alerts in real-time.
