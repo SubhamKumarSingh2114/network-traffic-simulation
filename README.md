@@ -1,15 +1,29 @@
 <h1 align="center">🛡️ AI Network Threat Intelligence Platform</h1>
 
 <p align="center">
-  <img src="https://img.shields.io/badge/Python-3.8+-blue.svg" alt="Python Version">
-  <img src="https://img.shields.io/badge/FastAPI-0.68.0+-green.svg" alt="FastAPI">
-  <img src="https://img.shields.io/badge/Database-SQLite-lightgrey.svg" alt="SQLite">
-  <img src="https://img.shields.io/badge/ML-Threat%20Detection-orange.svg" alt="Machine Learning">
+  <img src="https://img.shields.io/badge/Python-3.8+-3776AB?style=for-the-badge&logo=python&logoColor=white" alt="Python Version">
+  <img src="https://img.shields.io/badge/FastAPI-0.68.0+-009688?style=for-the-badge&logo=fastapi&logoColor=white" alt="FastAPI">
+  <img src="https://img.shields.io/badge/Scikit--Learn-Random%20Forest-F7931E?style=for-the-badge&logo=scikit-learn&logoColor=white" alt="Scikit Learn">
+  <img src="https://img.shields.io/badge/Database-SQLite-003B57?style=for-the-badge&logo=sqlite&logoColor=white" alt="SQLite">
+  <img src="https://img.shields.io/badge/DSA-Graph%20%2B%20Heaps-blueviolet?style=for-the-badge" alt="DSA">
 </p>
 
 <p align="center">
-  <strong>An intelligent, real-time network monitoring and threat detection system powered by Machine Learning and Graph Algorithms.</strong>
+  <strong>Production-grade, asynchronous backend system bridging Machine Learning classification with classical graph algorithms to simulate, intercept, and mitigate cyber threats in real-time.</strong>
 </p>
+
+---
+
+## 🎯 Recruiter & Engineering Highlights
+
+> **Why this project stands out**: Unlike standard CRUD apps or standalone Jupyter notebooks, this platform bridges **Data Structures & Algorithms (DSA)**, **Machine Learning**, and **Production API Design** into an integrated cybersecurity backend.
+
+| Domain | What was Built | Engineering Value |
+| :--- | :--- | :--- |
+| **Applied Machine Learning** | Random Forest threat classifier with real-time confidence scoring | Multi-class classification (DDoS, Port Scan, Brute Force) on continuous network flow metrics. |
+| **Data Structures & Algorithms** | Weighted Network Graph (BFS/DFS, Dijkstra), Min/Max Priority Queues | Deterministic shortest-path routing, network blast-radius containment, and $O(\log n)$ threat triaging. |
+| **Backend Architecture** | High-throughput asynchronous FastAPI microservice with Swagger documentation | Sub-millisecond internal routing, decoupled simulation loops, and clean modular boundary isolation. |
+| **Data Persistence & Audit** | Relational schema in SQLite with indexed query patterns | Full historical traceability of traffic metadata, attack vectors, and prioritized alert logs. |
 
 ---
 
@@ -24,6 +38,35 @@ To complement machine learning-based detection, the platform incorporates **grap
 Detected traffic and security alerts are persistently stored using an **SQLite database**, maintaining traffic logs, attack types, alert confidence, and source IP information. The entire system is exposed through a **FastAPI backend**, providing APIs for network information, graph traversal, shortest-path analysis, traffic generation, threat prediction, alert retrieval, traffic logs, top attackers, and prioritized alerts.
 
 Overall, the project demonstrates how **Artificial Intelligence and classical Data Structures and Algorithms can be integrated into a practical cybersecurity system**. By combining automated traffic generation, machine learning-based threat classification, graph-based network analysis, prioritized alert management, and persistent monitoring, the platform provides a modular foundation for intelligent network security and threat intelligence applications.
+
+---
+
+## 🏗️ System Architecture & Workflow
+
+```text
+       [ Network Traffic Generator ]
+                     │
+      (Packet / Byte / Protocol Flow)
+                     ▼
+         [ Feature Preprocessing ]
+                     │
+        ┌────────────┴────────────┐
+        ▼                         ▼
+[ ML Threat Classifier ]    [ Graph Topology Engine ]
+  • Random Forest Model       • Dijkstra Optimal Path
+  • Anomaly Prediction        • BFS / DFS Reachability
+  • Confidence Scoring        • Blast Radius Analysis
+        │                         │
+        └────────────┬────────────┘
+                     ▼
+       [ Priority Alert Queue (Heap) ]
+                     │
+        ┌────────────┴────────────┐
+        ▼                         ▼
+ [ SQLite Audit Store ]     [ FastAPI REST Endpoints ]
+  • Traffic History          • Real-time Inference API
+  • Alert Logs               • Interactive Swagger UI
+```
 
 ---
 
