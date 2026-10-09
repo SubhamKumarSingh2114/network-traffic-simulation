@@ -14,19 +14,6 @@
 
 ---
 
-## 🎯 Recruiter & Engineering Highlights
-
-> **Why this project stands out**: Unlike standard CRUD apps or standalone Jupyter notebooks, this platform bridges **Data Structures & Algorithms (DSA)**, **Machine Learning**, and **Production API Design** into an integrated cybersecurity backend.
-
-| Domain | What was Built | Engineering Value |
-| :--- | :--- | :--- |
-| **Applied Machine Learning** | Random Forest threat classifier with real-time confidence scoring | Multi-class classification (DDoS, Port Scan, Brute Force) on continuous network flow metrics. |
-| **Data Structures & Algorithms** | Weighted Network Graph (BFS/DFS, Dijkstra), Min/Max Priority Queues | Deterministic shortest-path routing, network blast-radius containment, and $O(\log n)$ threat triaging. |
-| **Backend Architecture** | High-throughput asynchronous FastAPI microservice with Swagger documentation | Sub-millisecond internal routing, decoupled simulation loops, and clean modular boundary isolation. |
-| **Data Persistence & Audit** | Relational schema in SQLite with indexed query patterns | Full historical traceability of traffic metadata, attack vectors, and prioritized alert logs. |
-
----
-
 ## 📄 Abstract
 
 The **AI Network Threat Intelligence Platform** is an intelligent network security system designed to simulate, analyze, and detect malicious network activities in real time. The system integrates machine learning, data structures and algorithms, network simulation, database management, and a FastAPI-based backend to provide an end-to-end framework for network threat monitoring.
