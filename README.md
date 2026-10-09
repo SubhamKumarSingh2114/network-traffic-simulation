@@ -13,6 +13,20 @@
 
 ---
 
+## 📄 Abstract
+
+The **AI Network Threat Intelligence Platform** is an intelligent network security system designed to simulate, analyze, and detect malicious network activities in real time. The system integrates machine learning, data structures and algorithms, network simulation, database management, and a FastAPI-based backend to provide an end-to-end framework for network threat monitoring.
+
+The system uses a **network traffic simulator** to generate both normal and malicious traffic, including **DDoS, Port Scan, and Brute Force attacks**, using features such as packet count, byte volume, connection count, packet rate, byte rate, duration, and communication protocol. The generated traffic is analyzed by a **Random Forest Classifier**, which predicts the type of network activity and provides a confidence score for the prediction.
+
+To complement machine learning-based detection, the platform incorporates **graph-based network analysis**. Routers and their connections are represented as a weighted graph, enabling **BFS and DFS traversal, Dijkstra's shortest-path routing, connected-component analysis, and identification of affected nodes** in a compromised network. The system also uses a **priority queue** to organize security alerts according to threat severity and a counter-based mechanism to identify frequently occurring attacking IP addresses.
+
+Detected traffic and security alerts are persistently stored using an **SQLite database**, maintaining traffic logs, attack types, alert confidence, and source IP information. The entire system is exposed through a **FastAPI backend**, providing APIs for network information, graph traversal, shortest-path analysis, traffic generation, threat prediction, alert retrieval, traffic logs, top attackers, and prioritized alerts.
+
+Overall, the project demonstrates how **Artificial Intelligence and classical Data Structures and Algorithms can be integrated into a practical cybersecurity system**. By combining automated traffic generation, machine learning-based threat classification, graph-based network analysis, prioritized alert management, and persistent monitoring, the platform provides a modular foundation for intelligent network security and threat intelligence applications.
+
+---
+
 ## 🌟 Overview
 
 The **AI Network Threat Intelligence Platform** is a robust backend system designed to simulate, monitor, and analyze network traffic. By combining traditional graph-based network traversal algorithms (BFS, DFS, Dijkstra) with Machine Learning, this platform can dynamically detect anomalies, classify potential threats (e.g., DDoS, Port Scans, Brute Force attacks), and prioritize security alerts in real-time.
